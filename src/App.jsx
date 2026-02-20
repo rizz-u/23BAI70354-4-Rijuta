@@ -20,7 +20,7 @@ function App() {
       >
         <NavigationBar />
 
-        {/* Main Content */}
+        {/* MAIN CONTENT */}
         <div className="flex-grow-1">
           <Routes>
             <Route path="/" element={<Home />} />
