@@ -170,12 +170,6 @@ This project is deployed using **Vercel**.
 Deployment format:
 
 ```
-{uid}-4-{name}.vercel.app
-```
-
-Example:
-
-```
 23bai70354-4-rijuta.vercel.app
 ```
 
