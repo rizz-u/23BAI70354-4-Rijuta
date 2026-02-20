@@ -1,16 +1,197 @@
-# React + Vite
+# CU Fest Website — Experiment 4
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an extension of Experiment 3 and demonstrates advanced React concepts including global state management, reducer-based state transitions, and performance optimization.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Objective
 
-## React Compiler
+The objective of this experiment is to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Implement global state using Context API
+* Manage complex state using useReducer
+* Optimize derived calculations using useMemo
+* Extend a multi-page React application
+* Maintain consistent UI/UX across pages
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features Implemented
+
+### ✅ Multi-Page Navigation
+
+React Router is used for seamless navigation between pages:
+
+* Home
+* Event Details
+* Contact
+* RSVP (New Page for Experiment 4)
+
+---
+
+### ✅ Global State Management (Context API)
+
+Global state is implemented using Context API.
+
+**Stores:**
+
+* Light/Dark theme
+* Task state
+
+**Used in:**
+
+* Navbar
+* ThemeToggle
+* HeroSection
+* RSVP Page
+
+---
+
+### ✅ State Management using useReducer
+
+A task manager is implemented using useReducer.
+
+**Actions implemented:**
+
+* ADD_TASK
+* TOGGLE_TASK
+* DELETE_TASK
+
+This demonstrates structured and scalable state transitions.
+
+---
+
+### ✅ Performance Optimization using useMemo
+
+useMemo is used to optimize derived calculations:
+
+* Completed task count
+* Total task display
+
+This prevents unnecessary recalculations.
+
+---
+
+### ✅ Theme Toggle (Light/Dark Mode)
+
+* Implemented using Context API
+* Applies theme globally
+* UI adapts using Bootstrap utility classes
+
+---
+
+### ✅ RSVP Page (Experiment 4 Page)
+
+This page demonstrates:
+
+* reducer usage
+* context usage
+* memo optimization
+* real-time UI updates
+
+---
+
+## 🧩 UI & Design
+
+* Clean and modern Bootstrap layout
+* Consistent design across pages
+* Responsive for mobile & desktop
+* Proper spacing and typography
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── HeroSection.jsx
+│   ├── EventCards.jsx
+│   └── ThemeToggle.jsx
+│
+├── context/
+│   └── AppContext.jsx
+│
+├── reducer/
+│   └── appReducer.js
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── EventDetails.jsx
+│   ├── Contact.jsx
+│   └── RSVP.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## 🛠 Technologies Used
+
+* React (Vite)
+* React Router DOM
+* Bootstrap
+* Context API
+* useReducer Hook
+* useMemo Hook
+
+---
+
+## 📸 Screenshots
+
+Screenshots of the application pages are available in the `/screenshots` folder.
+
+Suggested screenshots:
+
+* Home page
+* RSVP page
+* Dark mode view
+
+---
+
+## ▶️ Run the Project
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 🌐 Deployment
+
+This project is deployed using **Vercel**.
+
+Deployment format:
+
+```
+{uid}-4-{name}.vercel.app
+```
+
+Example:
+
+```
+23bai70354-4-rijuta.vercel.app
+```
+
+---
+
+## 🎓 Learning Outcomes
+
+* Understanding global state with Context API
+* Managing state transitions using reducers
+* Optimising performance using useMemo
+* Building scalable multi-page React applications
+* Creating responsive modern UI
+
+---
+
+## 👩‍💻 Author
+
+**Rijuta Sharma**
+UID: 23BAI70354
