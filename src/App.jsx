@@ -14,12 +14,13 @@ function App() {
   return (
     <BrowserRouter>
       <div
-  className={
-    darkMode
-      ? "bg-dark text-light min-vh-100"
-      : "bg-light text-dark min-vh-100"}>
+        className={`d-flex flex-column min-vh-100 ${
+          darkMode ? "bg-dark text-light" : "bg-light text-dark"
+        }`}
+      >
         <NavigationBar />
 
+        {/* Main Content */}
         <div className="flex-grow-1">
           <Routes>
             <Route path="/" element={<Home />} />
